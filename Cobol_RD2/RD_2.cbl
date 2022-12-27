@@ -11,11 +11,14 @@
        FILE-CONTROL.
             SELECT OldBalance ASSIGN TO 'D:\Cobol\OldBalance.txt'
             ORGANIZATION IS LINE SEQUENTIAL.
+      
             SELECT TodayTransaction ASSIGN TO
             'D:\Cobol\TodayTransaction.txt'
             ORGANIZATION IS LINE SEQUENTIAL.
+      
             SELECT NewBalance ASSIGN TO 'D:\Cobol\NewBalance.txt'
             ORGANIZATION IS LINE SEQUENTIAL.
+      
        DATA DIVISION.
        FILE SECTION.
        FD NewBalance.
