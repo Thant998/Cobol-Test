@@ -1,0 +1,6 @@
+Branch Code  Product Code  Quantity
+100100050
+100110070
+200100020
+300100120
+400100100
