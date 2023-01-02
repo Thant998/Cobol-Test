@@ -13,19 +13,21 @@ DATA DIVISION.
 FILE SECTION.
       FD IN-EMPLOYEE-FILE
       LABEL RECORDS ARE STANDARD.
-          01 IN-EMPLOYEE-REC.
-              05 IN-EMPLOYEE-NO PIC X(3).
-              05 IN-EMPLOYEE-LAST-NAME PIC X(20).
+          01     IN-EMPLOYEE-REC.
+              05 IN-EMPLOYEE-NO         PIC X(3).
+              05 IN-EMPLOYEE-LAST-NAME  PIC X(20).
               05 IN-EMPLOYEE-FIRST-NAME PIC X(10).
-              05 IN-RANK PIC XX.
-              05 IN-SALARY PIC 9(6)V99.
+              05 IN-RANK                PIC XX.
+              05 IN-SALARY              PIC 9(6)V99.
+      
       FD OUT-REPORT-FILE
       LABEL RECORDS ARE OMITTED.
           01 OUT-REPORT-REC PIC X(132).
+      
 WORKING-STORAGE SECTION.
           01 WS-WORK-AREAS.
               05 ARE-THERE-MORE-RECORDS PIC X(3) VALUE 'YES'.
-              05 WS-PROFESSOR-CTR PIC 9(3) VALUE ZEROS.
+              05 WS-PROFESSOR-CTR       PIC 9(3) VALUE ZEROS.
               05 WS-ASSOCIATE-CTR PIC 9(3) VALUE ZEROS.
               05 WS-ASSISTANT-CTR PIC 9(3) VALUE ZEROS.
               05 WS-INSTRUCTOR-CTR PIC 9(3) VALUE ZEROS.
