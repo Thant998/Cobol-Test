@@ -1,7 +1,7 @@
       ******************************************************************
-      * Author: U HIGH
-      * Date:
-      * Purpose:
+      * Author: Minn Thant
+      * Date: 2022/09/15
+      * Purpose: file matching
       * Tectonics: cobc
       ******************************************************************
        IDENTIFICATION DIVISION.
